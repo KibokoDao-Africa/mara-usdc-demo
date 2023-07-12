@@ -1,7 +1,7 @@
 const hre = require("hardhat");
 
 const { Contract } = require("hardhat/internal/hardhat-network/stack-traces/model");
-const contractAddress ="0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const contractAddress ="0x064004473A2BB2F9A1fF07230cEbAc245f2Fecbc";
 const contractName ="Mara";
 async function main(){
 
