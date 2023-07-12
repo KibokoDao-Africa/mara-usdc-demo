@@ -1,14 +1,19 @@
+// We require the Hardhat Runtime Environment explicitly here. This is optional
+// but useful for running the script in a standalone fashion through `node <script>`.
+//
+// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
+// will compile your contracts, add the Hardhat Runtime Environment's members to the
+// global scope, and execute the script.
 const hre = require("hardhat");
 
 async function main() {
- 
+   const Mara = await hre.ethers.getContractFactory("Mara");
+  const mara = await Mara.deploy();
 
-  const mara= await hre.ethers.deployContract("Mara");
-
-  await mara.waitForDeployment();
+  await mara.deployed();
 
   console.log(
-    ` deployed to ${mara.target}`
+    ` deployed to ${mara.address}`
   );
 }
 

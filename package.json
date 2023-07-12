@@ -18,6 +18,7 @@
   "homepage": "https://github.com/KibokoDao-Africa/mara-usdc-demo#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "ethers": "^5.6.9",
     "hardhat": "^2.16.1"
   }
 }
