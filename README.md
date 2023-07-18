@@ -11,3 +11,7 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
+remember to create an env file with PRIVATE_KEY and  CONTRACT_ADDRESS
+to run the contract on mara testnet use the command
+``` npx hardhat run scripts/deploy.js --network maratestnet```
+
