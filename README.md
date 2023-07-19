@@ -15,3 +15,5 @@ remember to create an env file with PRIVATE_KEY and  CONTRACT_ADDRESS
 to run the contract on mara testnet use the command
 ``` npx hardhat run scripts/deploy.js --network maratestnet```
 
+the mara explorer can be found on https://testnet.mara.xyz/
+
