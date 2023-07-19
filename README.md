@@ -5,10 +5,14 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 Try running some of the following tasks:
 
 ```shell
+git clone https://github.com/KibokoDao-Africa/mara-usdc-demo
+cd mara-usdc-demo
+npm install
 npx hardhat help
 npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
+npx hardhat compile
 npx hardhat run scripts/deploy.js
 ```
 remember to create an env file with PRIVATE_KEY and  CONTRACT_ADDRESS
