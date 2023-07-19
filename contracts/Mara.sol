@@ -24,8 +24,16 @@ contract Mara {
         string name;
     }
 
-    Member[] public members;
+    struct Student{
+        uint  id;
+        string name;
+        address addr;
 
+    }
+
+    Member[] public members;
+    Student[] public students;
+    mapping(uint => Student)   studentDetails;
     //modifier
     modifier onlyOwner() {
         require(msg.sender == owner, "admin only");
@@ -52,4 +60,19 @@ contract Mara {
 
         members.push(member);
     }
+
+    function createStudent(uint _id, string memory _name, address _addr) public{
+        Student memory student;
+        student.id = _id;
+        student.name = _name;
+        student.addr = _addr;
+
+        students.push(student);
+    }
+
+
+    function getStudent(uint _id) public view returns(Student memory){
+        return studentDetails[_id];
+    }
+    
 }
