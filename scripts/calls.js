@@ -18,12 +18,24 @@ async function main(){
 
 
     const  Count = await call.getCount;
+
+   
+
+    const student = await call.getStudent(11);
+
+      
+
+    
+
+    
     // console.log(addmember);
     // console.log(Count);
 
     // console.log(receipt);
 
-     console.log(addStudent);
+    //  console.log(addStudent);
+
+     console.log(student);
 
 
 
