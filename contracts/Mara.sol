@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
-contract Mara {
+contract Mara  {
     uint public count;
     address public owner;
     //declearing a varible
