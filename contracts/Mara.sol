@@ -78,5 +78,11 @@ contract Mara  {
     function getStudent(uint _id) public view returns(Student memory){
         return studentDetails[_id];
     }
+
+     function deposit(address payable  _to)public payable{
+        _to.transfer(msg.value);
+     }
+
+     
     
 }
