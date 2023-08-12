@@ -18,7 +18,7 @@ contract Mara  {
     //event for logs
 
     constructor() {
-        owner = msg.sender;
+        owner = payable (msg.sender);
     }
 
     //struct
@@ -83,6 +83,20 @@ contract Mara  {
         _to.transfer(msg.value);
      }
 
+
+//function withdraw
+
+function withdraw(uint256 amount) public onlyOwner returns (bool) {
+        require(amount <= address(this).balance, "Insufficient contract balance");
+        // owner.transfer(amount);
+        return true;
+    }
+
+    // Additional functions...
+
+    receive() external payable {
+        // This function allows the contract to receive Ether.
+    }
      
     
 }
